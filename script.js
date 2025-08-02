@@ -6,3 +6,8 @@ for (let outer=0;outer<16;outer++){
         container.appendChild(div);
     }
 }
+document.querySelectorAll(".square").forEach((div) => {
+  div.onmouseover = (event) => {
+    div.classList.add("hovering");
+  }
+})
